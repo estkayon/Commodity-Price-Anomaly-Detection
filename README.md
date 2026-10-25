@@ -456,7 +456,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <br/>
 
-![GitHub](https://img.shields.io/badge/GitHub-estkayon-181717?style=flat-square&logo=github)
-![Portfolio](https://img.shields.io/badge/Portfolio-estkayon.github.io-E94560?style=flat-square&logo=google-chrome&logoColor=white)
+![GitHub] (https://github.com/estkayon)
+![Portfolio](https://estkayon.github.io/Portfolio/)
 
 </div>
