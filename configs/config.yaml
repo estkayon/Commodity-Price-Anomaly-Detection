@@ -1,0 +1,55 @@
+project:
+  name: PriceRadar
+  version: "0.1.0"
+
+commodities:
+  # Yahoo Finance tickers (daily)
+  yahoo:
+    - ticker: "CL=F"
+      name: "Crude Oil WTI"
+      category: "energy"
+    - ticker: "NG=F"
+      name: "Natural Gas"
+      category: "energy"
+    - ticker: "GC=F"
+      name: "Gold"
+      category: "metals"
+
+  # FRED series IDs (weekly/monthly)
+  fred:
+    - series_id: "PWHEAMTUSDM"
+      name: "Wheat"
+      category: "agriculture"
+      frequency: "monthly"
+    - series_id: "PRICENPQUSDM"
+      name: "Rice"
+      category: "agriculture"
+      frequency: "monthly"
+    - series_id: "PSUGAISAUSDM"
+      name: "Sugar"
+      category: "agriculture"
+      frequency: "monthly"
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  models_dir: "data/models"
+  history_years: 5
+
+anomaly:
+  z_score_threshold: 3.0
+  isolation_forest_contamination: 0.05
+  rolling_window_days: 30
+
+forecasting:
+  prophet_periods: 30
+  lightgbm_features_lag_days: [7, 14, 30, 60, 90]
+
+mlops:
+  mlflow_tracking_uri: "mlruns"
+  drift_check_window: 30
+  retrain_threshold: 0.15
+
+dashboard:
+  port: 8501
+  refresh_interval_hours: 6
