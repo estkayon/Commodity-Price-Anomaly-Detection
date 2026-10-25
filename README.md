@@ -454,9 +454,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Built by [Md. Estiak Rahman Ayon](https://github.com/estkayon)**
 
-<br/>
-
-![GitHub] (https://github.com/estkayon)
-![Portfolio](https://estkayon.github.io/Portfolio/)
 
 </div>
